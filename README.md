@@ -13,3 +13,7 @@ result, and important viva questions.
 
 https://github.com/sanjay-6727/EHack.git
 
+https://chat.mistral.ai/work/ff484e5e-b7bd-4e03-8404-6637059b26a9
+
+
+
