@@ -21,7 +21,7 @@
 
 ### 🌐 Network Recon Web Tools
 * **Robtex:** Access `robtex.com` ➔ Input `ssn.edu.in` ➔ Analyze shared infrastructure/IP history.
-* **Nessus Essentials:** Log in (`natc`/`natc`) ➔ **New Scan** ➔ Target: Metasploitable IP ➔ Analyze vulnerabilities.
+* **Nessus Essentials:** Log in (`login`/`login`) ➔ **New Scan** ➔ Target: Metasploitable IP ➔ Analyze vulnerabilities.
 
 ---
 
@@ -76,7 +76,7 @@
   # OS Detection
   sudo nmap -O 127.0.0.1
   # Aggressive Scan (Syn Stealth, Version, OS, Scripts) saved to file
-  sudo nmap -sS -sV -O -sC 8.8.8.8 -oN nat.txt
+  sudo nmap -sS -sV -O -sC 8.8.8.8 -oN temp.txt
   ```
 
 
