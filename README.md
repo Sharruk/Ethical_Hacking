@@ -321,6 +321,304 @@ Each practical includes the **aim, procedure, observations, result, and importan
 
 ---
 
+```
+SET 1 — Ethical Hacking Model Exam
+Short, record-ready answers for all 3 questions from your PDF, pages 2–4.
+Q1. FOCA + Search Digg
+Aim: To perform passive information gathering and extract document metadata using FOCA and Search Digg.
+
+Problem Statement: To identify publicly exposed document metadata and indexed resources of an authorized domain.
+
+Procedure:
+1. Open FOCA and create a new project.
+2. Enter the approved domain.
+3. Search for public PDF, DOCX and XLSX files.
+4. Extract metadata like author, software and creation date.
+5. Open Search Digg and search for publicly indexed resources.
+6. Record URLs, document types and visible information.
+7. Compare findings, take screenshots and suggest security measures.
+Final Observation: Write based on the metadata and documents found.
+
+Q2. Robtex + Nessus
+Aim: To gather domain intelligence using Robtex and identify vulnerabilities using Nessus.
+
+Problem Statement: To examine public DNS information and assess vulnerabilities on an authorized lab host.
+
+Procedure:
+1. Open Robtex and search for the approved domain.
+2. Examine DNS records such as A, AAAA, MX, NS and TXT.
+3. Record IP addresses and name servers.
+4. Open Nessus and create a Basic Network Scan.
+5. Enter the authorized lab IP address as the target.
+6. Start the scan and wait for completion.
+7. Record open ports, services and detected vulnerabilities.
+8. Classify findings by severity and suggest remediation.
+Final Observation: Write the DNS details and vulnerability severity levels shown in your output.
+
+Q3. Wireshark + Armitage
+Aim: To analyze network traffic using Wireshark and validate vulnerabilities using Armitage in an isolated lab.
+
+Problem Statement: To inspect captured packets, identify services and verify vulnerabilities on an authorized vulnerable virtual machine.
+
+Procedure:
+1. Start Kali Linux and the vulnerable virtual machine on an isolated network.
+2. Open Wireshark and select the correct network interface.
+3. Start packet capture and generate permitted lab traffic.
+4. Apply filters such as icmp, dns, tcp and http.
+5. Record source IP, destination IP and protocol details.
+6. Open Armitage and connect to Metasploit.
+7. Identify the lab host, open ports and services.
+8. Perform instructor-approved, non-destructive vulnerability validation.
+9. Record results and recommend patches or firewall restrictions.
+Final Observation: Write the protocols, services and vulnerability-validation results observed in your output.
+
+SET 1 complete! Memorize the Aim, Problem Statement and Procedure. For the final observation, write only what your actual output shows.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+set 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+SET 2 — Ethical Hacking Model Exam
+Short, record-ready answers for all 3 questions from your PDF, pages 6–8.
+Q1. WHOIS + nsLookup + Sublist3r
+Aim: To gather domain registration details, DNS records and discover subdomains using WHOIS, nsLookup and Sublist3r.
+
+Problem Statement: To create a domain footprint and identify potential security risks from publicly exposed information.
+
+Procedure:
+1. Obtain the instructor-approved domain.
+2. Execute whois example.com to view registration details.
+3. Execute nslookup example.com to find the IP address.
+4. Execute nslookup -type=NS example.com to find name servers.
+5. Execute nslookup -type=MX example.com to find mail servers.
+6. Execute sublist3r -d example.com to discover subdomains.
+7. Record the results, take screenshots and suggest security measures.
+Final Observation: Write the registration details, DNS records and subdomains found.
+
+Q2. Robtex + Nmap
+Aim: To collect domain intelligence using Robtex and identify open ports and services using Nmap.
+
+Problem Statement: To analyze publicly available network information and identify exposed services on an authorized lab host.
+
+Procedure:
+1. Open Robtex and search for the approved domain.
+2. Record DNS records, IP addresses and name servers.
+3. Open the terminal and check connectivity to the authorized lab host.
+4. Execute nmap <lab-IP> to scan ports.
+5. Execute nmap -sV <lab-IP> to identify service versions.
+6. If instructed, execute nmap -sC <lab-IP> to run default scripts.
+7. Save results using nmap -sV -oN nmap_results.txt <lab-IP>.
+8. Analyze exposed services and suggest security measures.
+Final Observation: Write the open ports, services and version details shown in the scan.
+
+Q3. Nessus + Armitage
+Aim: To identify vulnerabilities using Nessus and perform controlled vulnerability validation using Armitage.
+
+Problem Statement: To assess security weaknesses in an authorized vulnerable virtual machine and recommend corrective actions.
+
+Procedure:
+1. Start Kali Linux and the vulnerable virtual machine on an isolated lab network.
+2. Open Nessus and create a Basic Network Scan.
+3. Enter the authorized lab IP address and start the scan.
+4. Record detected ports, services, vulnerabilities and severity levels.
+5. Open Armitage and connect to Metasploit.
+6. Discover or import the authorized lab host.
+7. Examine its ports and services.
+8. Perform instructor-approved, non-destructive vulnerability validation.
+9. Compare findings and recommend patches or access restrictions.
+Final Observation: Write the vulnerabilities detected, their severity and the validation results.
+
+SET 2 complete! Say “Set 3” when you're ready.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+set 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+SET 3 — Ethical Hacking Model Exam
+Short, record-ready answers for all 3 questions from your PDF, pages 10–12.
+Q1. Maltego + Shodan + Google Dorking
+Aim: To identify publicly exposed assets and gather information using Maltego, Shodan and Google Dorking.
+
+Problem Statement: To analyze an organization's public attack surface and identify potential information-disclosure risks.
+
+Procedure:
+1. Obtain the instructor-approved domain.
+2. Open Maltego and create a new graph.
+3. Add the domain and perform available transformations.
+4. Record related domains, IP addresses and DNS information.
+5. Open Shodan and search using hostname:example.com.
+6. Record exposed hosts, ports and service details.
+7. Use Google Dorking with site:example.com filetype:pdf and site:example.com filetype:docx.
+8. Record findings, take screenshots and suggest security measures.
+Final Observation: Write the publicly exposed assets and documents found.
+
+Q2. Nmap + Nessus
+Aim: To identify network services using Nmap and assess vulnerabilities using Nessus.
+
+Problem Statement: To discover exposed ports and identify security weaknesses in an authorized laboratory server.
+
+Procedure:
+1. Obtain the authorized lab server IP.
+2. Execute nmap <lab-IP> to identify open ports.
+3. Execute nmap -sV <lab-IP> to identify service versions.
+4. Save results using nmap -sV -oN service_report.txt <lab-IP>.
+5. Open Nessus and create a Basic Network Scan.
+6. Enter the authorized lab IP and start the scan.
+7. Record vulnerabilities, severity levels and affected services.
+8. Compare both outputs and recommend corrective measures.
+Final Observation: Write the open ports, detected services and vulnerabilities found.
+
+Q3. Wireshark + Armitage
+Aim: To analyze network packets using Wireshark and validate vulnerabilities using Armitage.
+
+Problem Statement: To investigate network communications and examine vulnerabilities on an authorized virtual machine.
+
+Procedure:
+1. Start Kali Linux and the vulnerable virtual machine on an isolated network.
+2. Open Wireshark and select the correct network interface.
+3. Start packet capture and generate permitted lab traffic.
+4. Apply filters such as icmp, dns, tcp and http.
+5. Record source IP, destination IP and protocol details.
+6. Open Armitage and connect to Metasploit.
+7. Identify the authorized host, open ports and services.
+8. Perform instructor-approved, non-destructive vulnerability validation.
+9. Record findings and suggest patches, traffic filtering or disabling unnecessary services.
+Final Observation: Write the protocols observed and the vulnerability-validation results.
+
+SET 3 complete! Say “Set 4” to continue.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+set 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+SET 4 — Ethical Hacking Model Exam
+Short, record-ready answers for all 3 questions from your PDF, pages 15–18.
+Q1. FOCA + theHarvester + Sysmon
+Aim: To gather public information using FOCA and theHarvester and investigate security events using Sysmon.
+
+Problem Statement: To identify information leakage and investigate suspicious activities on a Windows workstation.
+
+Procedure:
+1. Obtain the approved domain and Windows lab logs.
+2. Open FOCA and create a new project.
+3. Search for public documents and extract metadata.
+4. Run theHarvester -d example.com -b bing to collect public information.
+5. Record discovered email addresses and hostnames.
+6. Open Windows Event Viewer.
+7. Navigate to Applications and Services Logs → Microsoft → Windows → Sysmon → Operational.
+8. Examine Event IDs 1 (process creation), 3 (network connection, if enabled) and 11 (file creation).
+9. Record findings and recommend security measures.
+Final Observation: Write the metadata, public information and relevant Sysmon events observed.
+
+Q2. Robtex + Nessus
+Aim: To collect domain and IP information using Robtex and identify vulnerabilities using Nessus.
+
+Problem Statement: To assess the security of an authorized lab server and recommend corrective measures.
+
+Procedure:
+1. Obtain the approved domain and lab IP address.
+2. Search for the domain in Robtex.
+3. Record DNS records, IP addresses and name-server details.
+4. Open Nessus and create a Basic Network Scan.
+5. Enter the authorized lab IP address.
+6. Start the scan and wait for completion.
+7. Record vulnerability names, severity levels and affected services.
+8. Analyze the findings and recommend patches, secure configurations or network restrictions.
+Final Observation: Write the DNS information and vulnerabilities detected by Nessus.
+
+Q3. Nmap + Armitage
+Aim: To identify network services using Nmap and validate vulnerabilities using Armitage.
+
+Problem Statement: To examine exposed ports and assess potential vulnerabilities on an authorized vulnerable virtual machine.
+
+Procedure:
+1. Start Kali Linux and the vulnerable virtual machine on an isolated network.
+2. Execute nmap <lab-IP> to identify open ports.
+3. Execute nmap -sV <lab-IP> to identify service versions.
+4. If instructed, execute nmap -sC <lab-IP> to run default scripts.
+5. Save results using nmap -sV -oN nmap_report.txt <lab-IP>.
+6. Open Armitage and connect to Metasploit.
+7. Discover the authorized lab host and examine its services.
+8. Perform instructor-approved, non-destructive vulnerability validation.
+9. Record findings and recommend patching or restricting unnecessary services.
+Final Observation: Write the open ports, service versions and vulnerability-validation results.
+```
+
 ## 📚 Reference Links
 
 - [GitHub repository](https://github.com/sanjay-6727/EHack.git)
