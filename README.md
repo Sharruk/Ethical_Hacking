@@ -618,6 +618,8 @@ Procedure:
 9. Record findings and recommend patching or restricting unnecessary services.
 Final Observation: Write the open ports, service versions and vulnerability-validation results.
 ```
+kuppanatc
+kuppared2006x
 
 ## 📚 Reference Links
 
